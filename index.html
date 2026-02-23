@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Kartik Jadhav - Computer Engineering Student & Aspiring Software Engineer.">
+    <title>Software Engineer Portfolio | Kartik Jadhav</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">KARTIK.DEV</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="accent-text">Kartik Jadhav</span></h1>
+            <p class="role">Computer Engineering Student | Aspiring SDE</p>
+            <p class="intro">Building efficient, scalable solutions and mastering Data Structures & Algorithms to solve real-world problems.</p>
+            <a href="#projects" class="btn">Explore My Projects</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Education</h3>
+                    <p><strong>B.E. in Computer Engineering</strong><br>Savitribai Phule Pune University | 2023 - 2027</p>
+                    <p>Focused on Backend Development, System Design, and Data Structures & Algorithms (DSA).</p>
+                </div>
+                <div class="about-text">
+                    <h3>The Goal</h3>
+                    <p>I am a developer who loves the logic behind the code. I spend my time building full-stack applications and optimizing algorithm efficiency. I'm currently seeking a Software Engineering internship to apply my technical toolkit in a professional environment.</p>
+                    <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="skills-container">
+                <span class="skill-badge">C++ (DSA)</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">SQL / MongoDB</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Linux</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Algorithmic Visualizer</h3>
+                    <p>A web-based tool that visualizes sorting and pathfinding algorithms, built to help students understand DSA concepts visually.</p>
+                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
+                </article>
+                <article class="project-card">
+                    <h3>E-Commerce REST API</h3>
+                    <p>A scalable backend built with Node.js and Express, featuring JWT authentication, payment integration, and database optimization.</p>
+                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
+                </article>
+                <article class="project-card">
+                    <h3>Real-time Chat App</h3>
+                    <p>A full-stack application using Socket.io and React to enable instantaneous communication with private messaging rooms.</p>
+                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form action="https://formspree.io/f/mojnkder" method="POST" id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kartik Jadhav. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">LeetCode</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
