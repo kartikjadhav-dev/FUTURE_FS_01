@@ -3,124 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of Kartik Jadhav - Computer Engineering Student & Aspiring Software Engineer.">
-    <title>Software Engineer Portfolio | Kartik Jadhav</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Software Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">KARTIK.DEV</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">Home</a></li>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">DevPortfolio.</div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="accent-text">Kartik Jadhav</span></h1>
-            <p class="role">Computer Engineering Student | Aspiring SDE</p>
-            <p class="intro">Building efficient, scalable solutions and mastering Data Structures & Algorithms to solve real-world problems.</p>
-            <a href="#projects" class="btn">Explore My Projects</a>
-        </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌓</button>
+        </nav>
     </header>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
+    <main>
+        <section id="hero" class="hero section-padding">
+            <div class="container">
+                <p class="greeting">Hi, I'm <span class="highlight">[Your Name]</span></p>
+                <h1 class="hero-title">A Computer Science student building scalable software solutions.</h1>
+                <p class="hero-subtitle">Passionate about clean code, robust algorithms, and turning complex problems into elegant systems.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding bg-alt">
+            <div class="container about-grid">
                 <div class="about-text">
-                    <h3>Education</h3>
-                    <p><strong>B.E. in Computer Engineering</strong><br>Savitribai Phule Pune University | 2023 - 2027</p>
-                    <p>Focused on Backend Development, System Design, and Data Structures & Algorithms (DSA).</p>
+                    <h2>About Me</h2>
+                    <p>I am a junior Computer Science major at [University Name] seeking a Software Engineering internship for Summer 2027. I specialize in backend development and data structures, with a growing interest in full-stack architecture.</p>
+                    <p>When I'm not debugging, I enjoy contributing to open-source, participating in hackathons, and exploring new frameworks.</p>
                 </div>
-                <div class="about-text">
-                    <h3>The Goal</h3>
-                    <p>I am a developer who loves the logic behind the code. I spend my time building full-stack applications and optimizing algorithm efficiency. I'm currently seeking a Software Engineering internship to apply my technical toolkit in a professional environment.</p>
-                    <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+                <div class="skills-container">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Stack</h2>
-            <div class="skills-container">
-                <span class="skill-badge">C++ (DSA)</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">JavaScript (ES6+)</span>
-                <span class="skill-badge">React.js</span>
-                <span class="skill-badge">Node.js</span>
-                <span class="skill-badge">SQL / MongoDB</span>
-                <span class="skill-badge">Git & GitHub</span>
-                <span class="skill-badge">Linux</span>
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-img-placeholder">Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>Algorithmic Trading Bot</h3>
+                            <p>A Python-based trading algorithm using historical market data to execute simulated trades based on moving averages. Achieved a 12% simulated ROI over a 6-month backtest.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>REST APIs</span>
+                            </div>
+                            <a href="#" class="btn-link" target="_blank">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-placeholder">Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>Task Management API</h3>
+                            <p>A robust RESTful API built for managing tasks and user authentication. Includes JWT authorization, rate limiting, and comprehensive automated test coverage.</p>
+                            <div class="tech-stack">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="btn-link" target="_blank">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-placeholder">Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>This responsive, mobile-first personal portfolio built from scratch to showcase my projects and technical skills. Features custom dark mode and CSS grid layouts.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Vanilla JS</span>
+                            </div>
+                            <a href="#" class="btn-link" target="_blank">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-grid">
-                <article class="project-card">
-                    <h3>Algorithmic Visualizer</h3>
-                    <p>A web-based tool that visualizes sorting and pathfinding algorithms, built to help students understand DSA concepts visually.</p>
-                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
-                </article>
-                <article class="project-card">
-                    <h3>E-Commerce REST API</h3>
-                    <p>A scalable backend built with Node.js and Express, featuring JWT authentication, payment integration, and database optimization.</p>
-                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
-                </article>
-                <article class="project-card">
-                    <h3>Real-time Chat App</h3>
-                    <p>A full-stack application using Socket.io and React to enable instantaneous communication with private messaging rooms.</p>
-                    <a href="https://github.com/kartikjadhav-dev" class="project-link">Source Code</a>
-                </article>
+        <section id="experience" class="experience section-padding bg-alt">
+            <div class="container">
+                <h2>Education & Experience</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Expected May 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.S. in Computer Science</h3>
+                            <h4>[Your University Name]</h4>
+                            <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Operating Systems, Database Management, Software Engineering.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2026 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Teaching Assistant</h3>
+                            <h4>Department of Computer Science</h4>
+                            <p>Assisted 40+ students in introductory Python programming. Held weekly office hours and graded weekly programming assignments, ensuring strict adherence to coding standards.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form action="https://formspree.io/f/mojnkder" method="POST" id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Kartik Jadhav. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-text">
+                <h2>Let's Connect</h2>
+                <p>I'm currently seeking internship opportunities. Feel free to reach out!</p>
+                <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
+            </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/kartikjadhav016k/">LinkedIn</a>
-                <a href="https://github.com/kartikjadhav-dev">GitHub</a>
-                <a href="https://leetcode.com/u/itskartik016/">LeetCode</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 [Your Name]. Built with vanilla web technologies.</p>
         </div>
     </footer>
 
